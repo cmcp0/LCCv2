@@ -10,7 +10,9 @@ app.controller('champInfo', ['$scope', 'champions','$http', '$routeParams', func
   	});
 	$http({
 	  method: 'GET',
-	  url: 'http://buildtester.herokuapp.com/champions/resFull?id='+$routeParams.id
+	  //url: 'http://192.168.0.4:1337/champions/resFull?id='+$routeParams.id
+		url: 'http://buildtester.herokuapp.com/champions/resFull?id='+$routeParams.id
+
 	}).then(function successCallback(response) {
 	    // this callback will be called asynchronously
 	    // when the response is available
