@@ -1,0 +1,34 @@
+<div class="" ng-controller="champInfo">
+  <div class="" ng-controller="champInfo">
+    <div class="cinfo" >
+      <div class="portrait" style="background : url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{detail.key}}_0.jpg') no-repeat 0px -{{detail.image.y+140}}px / cover">
+
+
+        <div class="pinfo text-primary-color">
+          <br>
+          <span class="name"><strong>{{detail.name}}</strong></span> - {{detail.title}}<br>
+          <span ng-repeat="tag in detail.tags">{{tag}} </span> <br><br>
+          <a href="" ng-click="decrease()" class="icon-minus text-primary-color"> </a>
+          <a href="" ng-click="increase()" class="icon-plus text-primary-color"></a>
+          <span class="lvl"><strong>Level {{lvlfactor+1}}</strong></span>
+        </div>
+
+
+      </div>
+      <div class="champd primary-text-color">
+
+        <span>Healh: <span
+          class="hp">{{(detail.stats.hp + (detail.stats.hpperlevel*lvlfactor)).toFixed(0)}}</span>  {{detail.partype}}: <span class="mp">{{(detail.stats.mp + (detail.stats.mpperlevel*lvlfactor)).toFixed(0)}}</span></span><br>
+        <span>Attact Damage: <span class="ad">{{(detail.stats.attackdamage + (detail.stats.attackdamageperlevel*lvlfactor)).toFixed(2)}} ({{detail.stats.attackdamageperlevel}}*)</span></span>
+        <span>Ability Power: <span class="ap">0</span></span><br>
+        <span>Armor: <span class="ar">{{(detail.stats.armor+(lvlfactor*detail.stats.armorperlevel)).toFixed(2)}} ({{detail.stats.armorperlevel}}*)</span></span>
+        <span>Magic Resist: <span class="mr">{{(detail.stats.spellblock+(detail.stats.spellblockperlevel*lvlfactor)).toFixed(2)}} ({{detail.stats.spellblockperlevel}})</span></span><br>
+        <span>Attack Speed: <span class="as">{{((1/(1.6 * (1 + detail.stats.attackspeedoffset)))+(detail.stats.attackspeedperlevel*(lvlfactor/100))).toFixed(3)}}</span></span>
+        <span>Cooldown Reduction: <span class="cd">0%</span></span><br>
+        <span>Critical: <span class="ct">{{detail.stats.crit}} ({{detail.stats.critperlevel}})</span></span>
+        <span>Movement Speed: <span class="ms">{{detail.stats.movespeed}}</span></span>
+
+      </div>
+    </div>
+  </div>
+</div>

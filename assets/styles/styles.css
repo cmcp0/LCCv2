@@ -1,0 +1,61 @@
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: none;
+}
+.cimg{
+  width: 100%;
+  margin-bottom: -5px;
+
+}
+.cscase{
+  width: 16.666%;
+  display: inline-block;
+  position: relative;
+}
+.cscase span{
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  padding: 0 5px;
+
+}
+.footer{
+
+
+	font-size: 12px;
+	padding: 1em 0;
+
+	text-align: center;
+	width: 100%;
+}
+.header{
+  height: 60px;
+  position: relative;
+  box-shadow: 0 1px 9px 0px #BDBDBD;
+}
+.header nav{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+
+
+}
+.header nav div{
+  padding: .5em;
+  font-size: 28px;
+
+}
+.portrait{
+
+
+}
+.pinfo{
+  padding: 1.5em;
+}
+
+.champd{
+  margin:  2em 2em;
+}

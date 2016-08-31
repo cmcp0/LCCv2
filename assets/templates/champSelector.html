@@ -1,0 +1,13 @@
+<div  ng-controller="selectController">
+
+
+				<div class="cscase" class="cs" ng-repeat="x in champions | orderBy:'name' ">
+
+
+				<a href="#/champ/{{x.id}}" >
+					<span class="accent-color text-primary-color">{{x.name}}</span>
+
+					<img class="cimg" src="http://ddragon.leagueoflegends.com/cdn/{{version}}/img/champion/{{x.image.full}}">
+				</a>
+				</div>
+</div>
