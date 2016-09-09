@@ -20,7 +20,7 @@ app.controller('champInfo', ['$scope', 'champions','$http', '$routeParams', func
 
 			d = $scope.detail.title;
 			$scope.detail.title = d[0].toUpperCase()+d.slice(1,d.length);
-			console.log($scope.detail.title);
+			console.log($scope.detail.name);
 	  }, function errorCallback(response) {
 	    // called asynchronously if an error occurs
 	    // or server returns response with an error status.
