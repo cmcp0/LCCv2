@@ -1,7 +1,7 @@
 app.controller('selectController', ['$scope', 'champions', function($scope, champions) {
- 	var ccount = 0;
+ 	var ccount = [];
  	champions.success(function(data) {
-    	$scope.champions = data.data;
+    	ccount = data.data;
       $scope.version = data.version;
   	});
 
