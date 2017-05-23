@@ -20,7 +20,7 @@ module.exports = {
 
             hostname: 'global.api.pvp.net',
             port: '443',
-            path: '/api/lol/static-data/na/v1.2/champion?champData=image&api_key=0883a181-f4ba-4ead-94a6-aa1afd94a912',
+            path: '/api/lol/static-data/na/v1.2/champion?champData=image&api_key=',
             method: 'GET'
 
         };
@@ -62,7 +62,7 @@ module.exports = {
 
             hostname: 'global.api.pvp.net',
             port: '443',
-            path: '/api/lol/static-data/na/v1.2/champion/'+rId+'?champData=all&api_key=0883a181-f4ba-4ead-94a6-aa1afd94a912',
+            path: '/api/lol/static-data/na/v1.2/champion/'+rId+'?champData=all&api_key=',
             method: 'GET'
 
         };
